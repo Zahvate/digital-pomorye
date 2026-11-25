@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Цифровое Поморье — Культурный гид по Архангельской области</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <div class="brand-mark">ЦП</div>
+      <div>
+        <span class="brand-title">Цифровое Поморье</span>
+        <span class="brand-sub">Культура и путешествия по Архангельской области</span>
+      </div>
+    </a>
+
+    <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false">☰ Меню</button>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" class="active">Главная</a>
+      <a href="routes.html">Маршруты и планировщик</a>
+      <a href="crafts.html">Промыслы и традиции</a>
+      <a href="constructor.html">Молодежный конструктор</a>
+      <a href="about.html">О проекте</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-minimal">
+        <span class="hero-eyebrow">2026 — Год культуры Русского Севера</span>
+        <h1>Откройте подлинный Русский Север: от деревянных храмов до поморских ремёсел</h1>
+        <p>
+          Единый навигатор по историческим поселениям, музеям, народным промыслам и продуманным маршрутам одного дня по Архангельской области.
+        </p>
+        <div class="hero-actions">
+          <a href="routes.html" class="btn btn-primary">Подобрать маршрут дня</a>
+          <a href="crafts.html" class="btn btn-outline-light">Ремёсла и сувениры Поморья</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-strip">
+    <div class="container stats-row">
+      <div class="stat-cell">
+        <strong>120+ памятников</strong>
+        <span>деревянного зодчества в музее-заповеднике «Малые Корелы»</span>
+      </div>
+      <div class="stat-cell">
+        <strong>Наследие ЮНЕСКО</strong>
+        <span>заповедный культурный ландшафт Кенозерского парка</span>
+      </div>
+      <div class="stat-cell">
+        <strong>6 готовых маршрутов</strong>
+        <span>с расчётом времени на дорогу, музеи и поморскую кухню</span>
+      </div>
+      <div class="stat-cell">
+        <strong>Живые промыслы</strong>
+        <span>каргопольская игрушка, козули, щепная птица и резьба по кости</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Куда отправиться в Архангельской области</h2>
+          <p>Популярные направления с официальными ссылками, логистикой и картой точек</p>
+        </div>
+        <a href="routes.html" class="btn btn-outline btn-sm">Все маршруты и подбор →</a>
+      </div>
+
+      <div class="grid-3">
+        <article class="card">
+          <div class="card-img-wrap">
+            <img src="img/malye-korely.jpg" alt="Музей-заповедник Малые Корелы">
+            <span class="card-tag">Приморский округ · 25 км</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Музей-заповедник «Малые Корелы»</h3>
+            <p class="card-desc">
+              Крупнейшее в России собрание памятников северного деревянного зодчества XVI–XIX веков под открытым небом.
+            </p>
+            <div class="card-footer">
+              <a href="routes.html?route=arkh_korely" class="btn btn-primary btn-sm">Маршрут дня</a>
+              <a href="https://www.korely.ru" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Оф. сайт ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img-wrap">
+            <img src="img/kargopol.jpeg" alt="Каргополь и Ошевенск">
+            <span class="card-tag">Каргопольский округ</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Каргополь и село Ошевенск</h3>
+            <p class="card-desc">
+              Белокаменные храмы XVI–XVII веков, центр ремёсел «Берегиня» и старинное северное село Ошевенское с деревянными часовнями.
+            </p>
+            <div class="card-footer">
+              <a href="routes.html?route=kargopol_day" class="btn btn-primary btn-sm">Маршрут дня</a>
+              <a href="https://kargopolmuseum.ru" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Оф. сайт ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img-wrap">
+            <img src="img/kenozero.jpg" alt="Кенозерский национальный парк">
+            <span class="card-tag">Плесецкий округ · ЮНЕСКО</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Кенозерский национальный парк</h3>
+            <p class="card-desc">
+              Деревня Вершинино, Никольская часовня на холме, расписные «небеса» храмов и экологические тропы среди озёр.
+            </p>
+            <div class="card-footer">
+              <a href="routes.html?route=kenozero_day" class="btn btn-primary btn-sm">Маршрут дня</a>
+              <a href="https://kenozero.ru" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Оф. сайт ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Возможности портала</h2>
+          <p>Три простых инструмента для планирования поездки и знакомства с культурой Севера</p>
+        </div>
+      </div>
+
+      <div class="grid-3">
+        <div class="box-panel">
+          <span class="badge badge-accent" style="margin-bottom:8px;">01 · Планировщик</span>
+          <h3 style="margin:0 0 8px;color:var(--primary);">Реалистичный тайминг дня</h3>
+          <p style="font-size:14px;color:var(--text-muted);margin:0 0 14px;">
+            Каждый маршрут привязан к конкретному городу или округу с учётом времени осмотра музеев и переездов между точками.
+          </p>
+          <a href="routes.html#plannerSection" class="btn btn-outline btn-sm">Перейти в планировщик</a>
+        </div>
+
+        <div class="box-panel">
+          <span class="badge badge-primary" style="margin-bottom:8px;">02 · Гибкая замена</span>
+          <h3 style="margin:0 0 8px;color:var(--primary);">Альтернативы на маршруте</h3>
+          <p style="font-size:14px;color:var(--text-muted);margin:0 0 14px;">
+            Внутри выбранного дня можно заменить ресторан на уютное кафе или столовую, а один музей — на соседний, не выезжая из района.
+          </p>
+          <a href="routes.html#quizSection" class="btn btn-outline btn-sm">Пройти подбор маршрута</a>
+        </div>
+
+        <div class="box-panel">
+          <span class="badge badge-success" style="margin-bottom:8px;">03 · Промыслы и сувениры</span>
+          <h3 style="margin:0 0 8px;color:var(--primary);">Витрина ремёсел и традиций</h3>
+          <p style="font-size:14px;color:var(--text-muted);margin:0 0 14px;">
+            Каталог подлинных северных промыслов, сувенирных лавок и традиций Поморья с прямыми ссылками на мастерские.
+          </p>
+          <a href="crafts.html" class="btn btn-outline btn-sm">Открыть каталог</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Портал «Цифровое Поморье»</h4>
+        <p style="font-size:13px;margin:0;">
+          Информационный путеводитель по культурному наследию, маршрутам и народным промыслам Архангельской области.
+        </p>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <ul class="footer-links">
+          <li><a href="routes.html">Маршруты и планировщик</a></li>
+          <li><a href="crafts.html">Промыслы и традиции</a></li>
+          <li><a href="constructor.html">Молодежный конструктор</a></li>
+          <li><a href="about.html">О проекте</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Официальные ресурсы региона</h4>
+        <ul class="footer-links">
+          <li><a href="https://pomorland.travel" target="_blank" rel="noopener">ТИЦ Архангельской области</a></li>
+          <li><a href="https://www.korely.ru" target="_blank" rel="noopener">Музей-заповедник «Малые Корелы»</a></li>
+          <li><a href="https://kenozero.ru" target="_blank" rel="noopener">Кенозерский национальный парк</a></li>
+          <li><a href="https://kargopolmuseum.ru" target="_blank" rel="noopener">Каргопольский музей</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 «Цифровое Поморье» · Архангельская область</span>
+      <span>Автор проекта: К.М. Паршин</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

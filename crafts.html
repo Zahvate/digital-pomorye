@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Промыслы, сувениры и традиции — Цифровое Поморье</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <div class="brand-mark">ЦП</div>
+      <div>
+        <span class="brand-title">Цифровое Поморье</span>
+        <span class="brand-sub">Культура и путешествия по Архангельской области</span>
+      </div>
+    </a>
+
+    <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false">☰ Меню</button>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Главная</a>
+      <a href="routes.html">Маршруты и планировщик</a>
+      <a href="crafts.html" class="active">Промыслы и традиции</a>
+      <a href="constructor.html">Молодежный конструктор</a>
+      <a href="about.html">О проекте</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-header">
+    <div class="container">
+      <h1>Народные промыслы, сувениры и традиции Поморья</h1>
+      <p>Подлинные ремесленные изделия Архангельской области, сувенирные мастерские с переходом на их официальные ресурсы и живые культурные традиции Русского Севера.</p>
+    </div>
+  </div>
+
+  <!-- РАЗДЕЛ 1: ВИТРИНА ПРОМЫСЛОВ И СУВЕНИРОВ (6 КАРТОЧЕК) -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Витрина северных промыслов и ремесленных мастерских</h2>
+          <p>Нажмите на кнопку карточки, чтобы перейти на официальный сайт или страницу мастерской для покупки сувениров и записи</p>
+        </div>
+      </div>
+
+      <div class="filter-bar">
+        <button type="button" class="filter-btn active" data-craft-filter="all">Все промыслы (6)</button>
+        <button type="button" class="filter-btn" data-craft-filter="wood">Дерево и роспись</button>
+        <button type="button" class="filter-btn" data-craft-filter="clay">Глина и кость</button>
+        <button type="button" class="filter-btn" data-craft-filter="gastro">Гастросувениры и текстиль</button>
+      </div>
+
+      <div class="grid-3">
+        <!-- 1. Каргопольская игрушка -->
+        <article class="card" data-craft-type="clay">
+          <div class="card-img-wrap">
+            <img src="img/craft-kargopol.jpg" alt="Каргопольская глиняная игрушка">
+            <span class="card-tag">г. Каргополь</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Каргопольская глиняная игрушка</h3>
+            <p class="card-desc">
+              Традиционная лепная игрушка из местной красной глины: Полкан, Берегиня, крестьянки и медведи с архаичным солярным орнаментом.
+            </p>
+            <div class="meta-box">
+              <div class="meta-row"><span>Мастерская:</span><strong>Центр ремёсел «Берегиня»</strong></div>
+              <div class="meta-row"><span>Ориентир цены:</span><strong>от 450 ₽ за изделие</strong></div>
+            </div>
+            <div class="card-footer">
+              <a href="https://vk.com/bereginya_kargopol" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Оф. страница ВК ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Щепная птица счастья -->
+        <article class="card" data-craft-type="wood">
+          <div class="card-img-wrap">
+            <img src="img/craft-bird.jpg" alt="Архангельская щепная птица счастья">
+            <span class="card-tag">г. Архангельск</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Архангельская щепная птица счастья</h3>
+            <p class="card-desc">
+              Домашний деревянный оберег, вырезанный из цельного соснового бруска без единого гвоздя и клея с ажурным веерным оперением.
+            </p>
+            <div class="meta-box">
+              <div class="meta-row"><span>Площадка:</span><strong>Дом народного творчества</strong></div>
+              <div class="meta-row"><span>Ориентир цены:</span><strong>от 800 ₽ за изделие</strong></div>
+            </div>
+            <div class="card-footer">
+              <a href="https://pomorland.travel" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Где купить в Архангельске ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. Холмогорская резьба по кости -->
+        <article class="card" data-craft-type="clay">
+          <div class="card-img-wrap">
+            <img src="img/craft-bone.jpeg" alt="Холмогорская резьба по кости">
+            <span class="card-tag">с. Ломоносово</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Холмогорская резьба по кости</h3>
+            <p class="card-desc">
+              Знаменитый художественный промысел XVII века с тончайшей ажурной резьбой по кости и бивню мамонта с родины М.В. Ломоносова.
+            </p>
+            <div class="meta-box">
+              <div class="meta-row"><span>Производство:</span><strong>Фабрика резьбы по кости</strong></div>
+              <div class="meta-row"><span>Ориентир цены:</span><strong>от 1 500 ₽ за брошь/гребень</strong></div>
+            </div>
+            <div class="card-footer">
+              <a href="https://lomonosovmuseum.ru" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Оф. сайт музея ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Архангельские козули -->
+        <article class="card" data-craft-type="gastro">
+          <div class="card-img-wrap">
+            <img src="img/craft-kozuli.jpeg" alt="Архангельские пряники-козули">
+            <span class="card-tag">г. Архангельск · Чумбаровка</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Архангельские пряники-козули</h3>
+            <p class="card-desc">
+              Расписные обрядовые пряники из жжёного сахара с корицей и гвоздикой — главный гастрономический символ Поморья.
+            </p>
+            <div class="meta-box">
+              <div class="meta-row"><span>Площадка:</span><strong>Музей архангельского пряника</strong></div>
+              <div class="meta-row"><span>Ориентир цены:</span><strong>от 250 ₽ за пряник</strong></div>
+            </div>
+            <div class="card-footer">
+              <a href="https://vk.com/museum_kozuli" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Страница музея ВК ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. Мезенская роспись -->
+        <article class="card" data-craft-type="wood">
+          <div class="card-img-wrap">
+            <img src="img/Menzenskaya_rospis.jpg" alt="Мезенская палащельская роспись">
+            <span class="card-tag">Лешуконский и Мезенский округа</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Мезенская (палащельская) роспись</h3>
+            <p class="card-desc">
+              Древняя графическая роспись по дереву в двух цветах (сажа и красная охра) с бегущими конями, оленями и утицами.
+            </p>
+            <div class="meta-box">
+              <div class="meta-row"><span>Изделия:</span><strong>Шкатулки, туеса, прялки, панно</strong></div>
+              <div class="meta-row"><span>Ориентир цены:</span><strong>от 700 ₽ за сувенир</strong></div>
+            </div>
+            <div class="card-footer">
+              <a href="https://vk.com/belomorskie_uzory" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Беломорские узоры ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. Северное ткачество и вязание -->
+        <article class="card" data-craft-type="gastro">
+          <div class="card-img-wrap">
+            <img src="img/chumbarovka.jpg" alt="Северное узорное вязание и ткачество">
+            <span class="card-tag">Пинежье и Архангельск</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Северное узорное вязание и ткачество</h3>
+            <p class="card-desc">
+              Традиционные поморские шерстяные варежки с геометрическим орнаментом, браные скатерти и половики ручной работы.
+            </p>
+            <div class="meta-box">
+              <div class="meta-row"><span>Мастерские:</span><strong>«Беломорские узоры» и мастера Пинежья</strong></div>
+              <div class="meta-row"><span>Ориентир цены:</span><strong>от 1 200 ₽ за варежки</strong></div>
+            </div>
+            <div class="card-footer">
+              <a href="https://pomorland.travel" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Каталог мастеров ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- РАЗДЕЛ 2: ТРАДИЦИИ РУССКОГО СЕВЕРА -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Живые традиции Русского Севера</h2>
+          <p>Нематериальное культурное наследие Поморья, которое можно увидеть и услышать сегодня</p>
+        </div>
+      </div>
+
+      <div class="grid-3">
+        <div class="box-panel">
+          <span class="badge badge-primary" style="margin-bottom:8px;">Архитектура и вера</span>
+          <h3 style="margin:0 0 8px;color:var(--primary);">Расписные «небеса» часовен</h3>
+          <p style="font-size:14px;color:var(--text-muted);margin:0;">
+            Уникальная конструктивная и живописная традиция Кенозерья и Каргополья: перекрытие деревянного храма в виде усечённой пирамиды с радиальными гранями, расписанными библейскими сюжетами.
+          </p>
+        </div>
+
+        <div class="box-panel">
+          <span class="badge badge-accent" style="margin-bottom:8px;">Фольклор и слово</span>
+          <h3 style="margin:0 0 8px;color:var(--primary);">Северная сказительская традиция</h3>
+          <p style="font-size:14px;color:var(--text-muted);margin:0;">
+            Наследие сказителей М.Д. Кривополеновой, С.Г. Писахова и Б.В. Шергина: особая поморская говоря, былины и северные сказки, звучащие на фестивалях в Архангельске и Пинежье.
+          </p>
+        </div>
+
+        <div class="box-panel">
+          <span class="badge badge-success" style="margin-bottom:8px;">Морская культура</span>
+          <h3 style="margin:0 0 8px;color:var(--primary);">Поморское кочевое мореходство</h3>
+          <p style="font-size:14px;color:var(--text-muted);margin:0;">
+            Традиции строительства деревянных парусных судов (кочей и карбасов) без железных гвоздей, морские лоции и освоение Груманта (Шпицбергена) и Новой Земли.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Портал «Цифровое Поморье»</h4>
+        <p style="font-size:13px;margin:0;">
+          Информационный путеводитель по культурному наследию, маршрутам и народным промыслам Архангельской области.
+        </p>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <ul class="footer-links">
+          <li><a href="routes.html">Маршруты и планировщик</a></li>
+          <li><a href="crafts.html">Промыслы и традиции</a></li>
+          <li><a href="constructor.html">Молодежный конструктор</a></li>
+          <li><a href="about.html">О проекте</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Официальные ресурсы региона</h4>
+        <ul class="footer-links">
+          <li><a href="https://pomorland.travel" target="_blank" rel="noopener">ТИЦ Архангельской области</a></li>
+          <li><a href="https://www.korely.ru" target="_blank" rel="noopener">Музей-заповедник «Малые Корелы»</a></li>
+          <li><a href="https://kenozero.ru" target="_blank" rel="noopener">Кенозерский национальный парк</a></li>
+          <li><a href="https://kargopolmuseum.ru" target="_blank" rel="noopener">Каргопольский музей</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 «Цифровое Поморье» · Архангельская область</span>
+      <span>Автор проекта: К.М. Паршин</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
