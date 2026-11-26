@@ -40,7 +40,7 @@ function initRouteCardsFilter() {
   });
 }
 
-/* 3. База мест с реальными координатами, стоимостью и официальными ссылками */
+/* 3. База мест с реальными координатами, стоимостью и карточками Яндекс Карт */
 const PLACES = {
   // --- Архангельск и Приморский округ ---
   korely: {
@@ -49,7 +49,7 @@ const PLACES = {
     cost: 400,
     lat: 64.4556,
     lon: 40.9419,
-    url: "https://www.korely.ru"
+    url: "https://yandex.ru/maps/org/arkhangelskiy_gosudarstvenny_muzey_zapovednik_derevyannogo_zodchestva_i_narodnogo_iskusstva_malyye_korely/1032274192/"
   },
   gostiny: {
     name: "Архангельские Гостиные дворы (Краеведческий музей)",
@@ -57,7 +57,7 @@ const PLACES = {
     cost: 350,
     lat: 64.5348,
     lon: 40.5159,
-    url: "https://kraeved29.ru"
+    url: "https://yandex.ru/maps/org/arkhangelskiy_krayevedcheskiy_muzey/1043289936/"
   },
   maritime: {
     name: "Северный морской музей",
@@ -65,7 +65,7 @@ const PLACES = {
     cost: 300,
     lat: 64.5332,
     lon: 40.5184,
-    url: "https://northernmaritime.ru"
+    url: "https://yandex.ru/maps/org/severny_morskoy_muzey/1190329563/"
   },
   borisov_museum: {
     name: "Музей художественного освоения Арктики им. А.А. Борисова",
@@ -73,7 +73,7 @@ const PLACES = {
     cost: 250,
     lat: 64.5382,
     lon: 40.5162,
-    url: "https://arhmuseum.ru"
+    url: "https://yandex.ru/maps/?ll=40.5162%2C64.5382&z=17&text=Музей%20художественного%20освоения%20Арктики%20им.%20А.А.%20Борисова"
   },
   chumbarovka: {
     name: "Проспект Чумбарова-Лучинского и сувенирные лавки",
@@ -81,7 +81,7 @@ const PLACES = {
     cost: 500,
     lat: 64.5396,
     lon: 40.5218,
-    url: "https://pomorland.travel"
+    url: "https://yandex.ru/maps/?ll=40.5218%2C64.5396&z=16&text=Проспект%20Чумбарова-Лучинского%20Архангельск"
   },
   // Питание Архангельск / Малые Корелы
   food_korely_rest: {
@@ -90,7 +90,7 @@ const PLACES = {
     cost: 950,
     lat: 64.4581,
     lon: 40.9452,
-    url: "https://www.karely.ru"
+    url: "https://yandex.ru/maps/?ll=40.9452%2C64.4581&z=16&text=Ресторан%20Малые%20Карелы"
   },
   food_korely_cafe: {
     name: "Обед (бюджетно): чайный дом / кафе у входа в «Малые Корелы»",
@@ -98,7 +98,7 @@ const PLACES = {
     cost: 450,
     lat: 64.4551,
     lon: 40.9408,
-    url: "https://www.korely.ru"
+    url: "https://yandex.ru/maps/?ll=40.9408%2C64.4551&z=16&text=Чайный%20дом%20Малые%20Корелы"
   },
   food_arkh_pomorsky: {
     name: "Ужин: ресторан поморской кухни «Поморский»",
@@ -106,7 +106,7 @@ const PLACES = {
     cost: 1400,
     lat: 64.5385,
     lon: 40.5171,
-    url: "https://pomorsky29.ru"
+    url: "https://yandex.ru/maps/?ll=40.5171%2C64.5385&z=17&text=Ресторан%20Поморский%20Архангельск"
   },
   food_arkh_cafe: {
     name: "Обед / ужин (средний чек): кафе «Грядка» или «Блинная» в центре",
@@ -114,7 +114,7 @@ const PLACES = {
     cost: 600,
     lat: 64.5405,
     lon: 40.5225,
-    url: "https://yandex.ru/maps/20/arkhangelsk/"
+    url: "https://yandex.ru/maps/?ll=40.5225%2C64.5405&z=16&text=Кафе%20Грядка%20Архангельск"
   },
   food_arkh_canteen: {
     name: "Обед / ужин (бюджетно): столовая «Съем Слона» в центре Архангельска",
@@ -122,7 +122,7 @@ const PLACES = {
     cost: 350,
     lat: 64.5412,
     lon: 40.5240,
-    url: "https://yandex.ru/maps/20/arkhangelsk/"
+    url: "https://yandex.ru/maps/?ll=40.5240%2C64.5412&z=16&text=Столовая%20Съем%20Слона%20Архангельск"
   },
 
   // --- Каргополь и Ошевенск ---
@@ -132,7 +132,7 @@ const PLACES = {
     cost: 300,
     lat: 61.5034,
     lon: 38.9472,
-    url: "https://kargopolmuseum.ru"
+    url: "https://yandex.ru/maps/org/kargopolskiy_muzey_dom_blokhina/1194447842/"
   },
   kargopol_bereginya: {
     name: "Центр народных ремёсел «Берегиня» (г. Каргополь)",
@@ -140,7 +140,7 @@ const PLACES = {
     cost: 350,
     lat: 61.5018,
     lon: 38.9445,
-    url: "https://vk.com/bereginya_kargopol"
+    url: "https://yandex.ru/maps/?ll=38.9445%2C61.5018&z=16&text=Центр%20народных%20ремёсел%20Берегиня%20Каргополь"
   },
   oshevensk: {
     name: "Старинное село Ошевенское (45 км от Каргополя)",
@@ -148,7 +148,7 @@ const PLACES = {
     cost: 200,
     lat: 61.8569,
     lon: 38.7905,
-    url: "https://kargopolmuseum.ru"
+    url: "https://yandex.ru/maps/?ll=38.7905%2C61.8569&z=14&text=Село%20Ошевенское%20Каргопольский%20район"
   },
   food_kargopol_rest: {
     name: "Обед / ужин в Каргополе: ресторан гостиницы «Каргополь»",
@@ -156,7 +156,7 @@ const PLACES = {
     cost: 850,
     lat: 61.5042,
     lon: 38.9460,
-    url: "https://yandex.ru/maps/"
+    url: "https://yandex.ru/maps/?ll=38.9460%2C61.5042&z=16&text=Гостиница%20Каргополь%20ресторан"
   },
   food_kargopol_cafe: {
     name: "Обед / ужин в Каргополе (бюджетно): кафе «У истока» / столовая",
@@ -164,7 +164,7 @@ const PLACES = {
     cost: 420,
     lat: 61.5029,
     lon: 38.9451,
-    url: "https://yandex.ru/maps/"
+    url: "https://yandex.ru/maps/?ll=38.9451%2C61.5029&z=16&text=Кафе%20У%20истока%20Каргополь"
   },
 
   // --- Кенозерский национальный парк (д. Вершинино) ---
@@ -174,7 +174,7 @@ const PLACES = {
     cost: 400,
     lat: 62.0815,
     lon: 38.2044,
-    url: "https://kenozero.ru"
+    url: "https://yandex.ru/maps/org/natsionalny_park_kenozerskiy/183052217174/"
   },
   kenozero_museum: {
     name: "Музей «В начале было Слово» и «Рухлядный амбар»",
@@ -182,7 +182,7 @@ const PLACES = {
     cost: 350,
     lat: 62.0822,
     lon: 38.2058,
-    url: "https://kenozero.ru"
+    url: "https://yandex.ru/maps/?ll=38.2058%2C62.0822&z=16&text=Музей%20В%20начале%20было%20Слово%20Вершинино"
   },
   kenozero_trail: {
     name: "Экологическая тропа «Трансэкотропа» и водяная мельница",
@@ -190,7 +190,7 @@ const PLACES = {
     cost: 300,
     lat: 62.0680,
     lon: 38.1890,
-    url: "https://kenozero.ru"
+    url: "https://yandex.ru/maps/?ll=38.1890%2C62.0680&z=14&text=Водяная%20мельница%20Зехнова%20Кенозерский%20парк"
   },
   food_kenozero_pocha: {
     name: "Обед в Кенозерье: трактир «Поча» / гостевой дом в Вершинино",
@@ -198,7 +198,7 @@ const PLACES = {
     cost: 750,
     lat: 62.0810,
     lon: 38.2035,
-    url: "https://kenozero.ru"
+    url: "https://yandex.ru/maps/?ll=38.2035%2C62.0810&z=16&text=Трактир%20Поча%20Вершинино"
   },
   food_kenozero_tea: {
     name: "Чаепитие и обед (бюджетно): чайная в визит-центре Вершинино",
@@ -206,7 +206,7 @@ const PLACES = {
     cost: 400,
     lat: 62.0816,
     lon: 38.2046,
-    url: "https://kenozero.ru"
+    url: "https://yandex.ru/maps/?ll=38.2046%2C62.0816&z=16&text=Визит-центр%20Кенозерского%20парка%20Вершинино"
   },
 
   // --- Кимжа и Мезень ---
@@ -216,7 +216,7 @@ const PLACES = {
     cost: 300,
     lat: 65.5714,
     lon: 44.6147,
-    url: "https://vk.com/kimzha"
+    url: "https://yandex.ru/maps/geo/derevnya_kimzha/53125670/"
   },
   kimzha_politov: {
     name: "Музей крестьянского быта «Политов дом» (д. Кимжа)",
@@ -224,7 +224,7 @@ const PLACES = {
     cost: 250,
     lat: 65.5720,
     lon: 44.6155,
-    url: "https://vk.com/kimzha"
+    url: "https://yandex.ru/maps/?ll=44.6155%2C65.5720&z=16&text=Музей%20Политов%20дом%20Кимжа"
   },
   food_kimzha: {
     name: "Обед в Кимже: гостевой дом «У Елены» (по предварительной договорённости)",
@@ -232,7 +232,7 @@ const PLACES = {
     cost: 650,
     lat: 65.5718,
     lon: 44.6150,
-    url: "https://vk.com/kimzha"
+    url: "https://yandex.ru/maps/?ll=44.6150%2C65.5718&z=16&text=Гостевой%20дом%20У%20Елены%20Кимжа"
   },
   mezen_museum: {
     name: "Мезенский историко-краеведческий музей (г. Мезень, 40 км от Кимжи)",
@@ -240,7 +240,7 @@ const PLACES = {
     cost: 200,
     lat: 65.8475,
     lon: 44.2412,
-    url: "https://vk.com/mezen_museum"
+    url: "https://yandex.ru/maps/?ll=44.2412%2C65.8475&z=16&text=Мезенский%20историко-краеведческий%20музей"
   },
 
   // --- Холмогоры и с. Ломоносово ---
@@ -250,7 +250,7 @@ const PLACES = {
     cost: 300,
     lat: 64.2345,
     lon: 41.7312,
-    url: "https://lomonosovmuseum.ru"
+    url: "https://yandex.ru/maps/org/istoriko_memorialny_muzey_m_v_lomonosova/1071767868/"
   },
   lomonosovo_bone: {
     name: "Косторезная мастерская в с. Ломоносово",
@@ -258,7 +258,7 @@ const PLACES = {
     cost: 250,
     lat: 64.2352,
     lon: 41.7325,
-    url: "https://lomonosovmuseum.ru"
+    url: "https://yandex.ru/maps/?ll=41.7325%2C64.2352&z=16&text=Холмогорская%20резьба%20по%20кости%20Ломоносово"
   },
   kholmogory_sobor: {
     name: "Спасо-Преображенский собор и краеведческий музей (с. Холмогоры)",
@@ -266,7 +266,7 @@ const PLACES = {
     cost: 200,
     lat: 64.2225,
     lon: 41.6540,
-    url: "https://pomorland.travel"
+    url: "https://yandex.ru/maps/?ll=41.6540%2C64.2225&z=16&text=Спасо-Преображенский%20собор%20Холмогоры"
   },
   food_kholmogory: {
     name: "Обед в с. Холмогоры: местное кафе в центре села",
@@ -274,7 +274,7 @@ const PLACES = {
     cost: 480,
     lat: 64.2238,
     lon: 41.6562,
-    url: "https://yandex.ru/maps/"
+    url: "https://yandex.ru/maps/?ll=41.6562%2C64.2238&z=15&text=Холмогоры%20кафе"
   }
 };
 
